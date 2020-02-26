@@ -9,6 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "node-sass": "node-sass -w --output-style compressed ./scss -o  ./css"
+   
+
   },
   "repository": {
     "type": "git",

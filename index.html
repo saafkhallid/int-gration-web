@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
+
     <!-- displays site properly based on user's device -->
 
     <link
@@ -32,34 +37,42 @@
             <div class="logo"><img src="images/logo.svg"></div>
             <div class="navbar">
 
-              <ul>
-                  <li>Product </li>
-                  <li>Features</li>
-                  <li> Pricing </li>
-                  <li></li>
-                  <li>Login </li>
+              <ul class="navbar__element">
+                  <li><a href="#">Product </a></li>
+                  <li> <a href="#">Features</a></li>
+                  <li><a href="#"> Pricing </a></li>
+                  <li><a href="#"><i class="fas fa-circle"></i></a></li>
+                  <li ><a class="navbar__element--active" href="#">Login</a> </li>
             </ul>
             </div> 
 
       </div>  
     </header>
     <section>
-      <div class="image"><img src="images/illustration-devices.svg"></div>
-      <div class="para">
+      <div class="container">
+          
 
-        <div>
-           <h1> <span>New </span>
-            <span>Monograph Dashboard</span> </h1>
-        </div>
-        <h2>Powerful insights into your team</h2>
-         <p>Project planning and time tracking for agile teams </p>
-         <div>
-           <button>
-         Schedule a demo 
-         </button>
-         to see a preview
-         </div>
-      </div>
+              <div class="text">
+
+                <div class="text__titre">
+                  <h1> <span class="text__titre--modif">New </span>
+                    <span class="text__titre--modif2">Monograph Dashboard</span> </h1>
+                </div>
+                <div class="text__block">
+                <h2 class="text__block--modif1">Powerful insights into your team</h2>
+                <p class="text__block--modif2">Project planning and time tracking <br>for agile teams </p>
+                </div>
+               
+                <div class="text__buteaux">
+                  <button class="text__buteaux--btn">
+                Schedule a demo 
+                </button>
+
+                 <p>see a preview </p>
+                </div>
+              </div>
+              <div class="image"><img src="images/illustration-devices.svg"></div>
+      </div>      
 
     </section>
 
