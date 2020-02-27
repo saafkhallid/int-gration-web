@@ -53,7 +53,7 @@ $sizefon :18px;
                            
                             
                             li {
-                                display: inline-flex;
+                                display: inline-block;
                                 padding: 5px 10px;
                                 margin-left:15px;
                                 
@@ -203,6 +203,66 @@ $sizefon :18px;
                 } 
                
             }
+
+
+            @media only screen and (max-width: 375px) {
+
+                * {
+                    padding: 0;
+                    margin: 0;
+                        body {
+                            width: 100%;
+                            height: auto;
+                                header {
+                                    .head {
+
+                                    }
+                                }
+                                section {
+                                    .container {
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                        flex-wrap: nowrap;
+                                           .image {
+                                               width: 100%; 
+                                                img {
+                                                    width: 120%;
+                                                    height: auto;
+                                                }
+                                           
+                                                 }
+                                            .text {
+                                                width: 100%;
+                                                .text__block {
+                                                    .text__block--modif1 {
+                                                        font-size: $sizefon*2;
+                                                    }
+                                                    .text__block--modif2 {
+                                                        font-size:$sizefon;  
+                                                    }
+                                                }
+                                                .text__buteaux {
+                                                     .text__buteaux--btn {
+                                                       padding: 10px 15px;
+
+
+                                                     }
+                                                     p {
+                                                        padding: 10px 15px;
+
+                                                     }
+                                                  
+                                                }
+
+                                            }     
+                                    }
+                                    
+                                }
+                        }
+                }
+
+            }
+       
            
 
 
