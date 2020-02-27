@@ -212,9 +212,13 @@ $sizefon :18px;
                     margin: 0;
                         body {
                             width: 100%;
+                            margin: 0 ;
                             height: auto;
                                 header {
                                     .head {
+                                        .navbar {
+                                            height: 450px;
+                                        }
 
                                     }
                                 }
@@ -226,13 +230,16 @@ $sizefon :18px;
                                            .image {
                                                width: 100%; 
                                                 img {
+                                                    margin-bottom: 100px;
                                                     width: 120%;
                                                     height: auto;
+                                                    
                                                 }
                                            
                                                  }
                                             .text {
                                                 width: 100%;
+
                                                 .text__block {
                                                     .text__block--modif1 {
                                                         font-size: $sizefon*2;
