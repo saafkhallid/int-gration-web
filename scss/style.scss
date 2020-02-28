@@ -17,7 +17,16 @@ $sizefon :18px;
         margin: 0 auto;
         font-family: 'Barlow Condensed', ;
         font-family: 'Barlow', ;
-
+        .bg{
+            width: 50%;
+            height: 50%;
+            background-color: $LightGrayishBlu;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 0 0 0 55px;
+            z-index: -10;
+        }
             header {
                 .head {
                   
@@ -34,26 +43,40 @@ $sizefon :18px;
                     
                     } 
                     .navbar {
+                        
+                        .navbar__ham {
+                            display: none;
+                            
+                        }
+
                         text-align: center;
                         float: right;
                         width: 45%;
                         height: 50vh;
-                        background-color: $LightGrayishBlu;
+                        // background-color: $LightGrayishBlu;
                         border-bottom-left-radius: 80px 80px;
 
                         .navbar__element{
-
+                            z-index: 2;
+                            position: absolute;
                             color: $VeryDarkBlue;
                             font-size: $sizefon - 4;
                             list-style-type: none;
+                            
+                            
                             padding-top: 40px;
+                                                
+                            
                             font-weight: 700;
                             font-family:'Barlow Condensed' ;
                             text-transform: uppercase;
+                            display: flex;
+                            display: inline-flex;
+
                            
                             
                             li {
-                                display: inline-block;
+                                
                                 padding: 5px 10px;
                                 margin-left:15px;
                                 
@@ -119,8 +142,10 @@ $sizefon :18px;
                     .image {
                         width: 50%;
                         display: block;
+                        z-index: -5;
                         img{
                             padding-left: 10%;
+                        
                         } 
                     }
                             }
@@ -205,6 +230,10 @@ $sizefon :18px;
             }
 
 
+
+           
+
+
             @media only screen and (max-width: 375px) {
 
                 * {
@@ -216,23 +245,123 @@ $sizefon :18px;
                             height: auto;
                                 header {
                                     .head {
+                                        .toggle,
+                                        .toggle2 {
+                                            float: right;
+                                        }
+                                        
+                                        .toggle2 {
+                                            visibility: hidden;
+                                            right: -20;
+                                        }
+                                        
+                                        
+                                                     
+                                             
+                                    
+                                             
                                         .navbar {
+                                            
+                                           
                                             height: 450px;
+                                          
+
+                                            // input[type=checkbox]:checked~ul {
+                                            //     display: block
+                                            // }
+                                            
+                                            // input[type=checkbox]:checked~.toggle {
+                                            //     visibility: hidden;
+                                            // }
+                                            
+                                            // input[type=checkbox]:checked~.toggle2 {
+                                            //     visibility: visible;
+                                            // }
+
+                                            
+
+                                           
+                                           
+                                           
+                                           
+                                            
+                                            .navbar__ham{
+                                                display: block;
+                                                padding-top: 50px;
+                                                padding-left: 80px;
+                                                
+                                            }
+                                               .navbar__element {
+                                                
+                                             
+                                                  
+                                                margin-top: 50px;
+                                                padding-right: 1000px;
+                                                background-color: rgb(156, 76, 76);
+                                                 display: flex;
+
+                                                
+                                                 
+                                                position: absolute;
+                                               
+                                                z-index: 1;
+                                                
+                                                width: 70%;
+                                                height: auto;
+                                                float: right;
+                                                top: 70px;
+                                                
+                                                left: 60px;
+                                                transition: 0.5s;
+                                                flex-direction: column;
+                                                 
+
+
+
+
+                                               }
                                         }
 
                                     }
                                 }
                                 section {
                                     .container {
+                                        
+                                        
                                         display: flex;
                                         flex-direction: column-reverse;
                                         flex-wrap: nowrap;
+                                        // position: absolute;
+                                        // z-index: -1;
                                            .image {
-                                               width: 100%; 
+                                               width: 100%;
+                                            //    z-index: -1;
+                                              
+                                               
+                                               
+                                               
+                                               
+
+                                               
+                                               
+                                               
+                                             
+
+                                               
+
                                                 img {
+                                                    z-index: 0;
                                                     margin-bottom: 100px;
                                                     width: 120%;
                                                     height: auto;
+
+                                                    
+                                                    
+                                                   
+                                                   
+                                                    // z-index: 2;
+                           
+
                                                     
                                                 }
                                            
