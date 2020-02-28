@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "node-sass": "node-sass -w --output-style compressed ./scss -o  ./css"
+    "node-sass": "node-sass -w  ./scss -o  ./css"
    
 
   },
