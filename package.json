@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "Le projet permet d'améliorer vos compétences dans un environnement de travail réel.",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^4.13.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "node-sass": "node-sass -w  ./scss -o  ./css"
-   
-
+    "node-sass": "node-sass -w  --output-style compressed   scss  -o css"
   },
   "repository": {
     "type": "git",
