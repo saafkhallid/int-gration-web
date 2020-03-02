@@ -1,0 +1,401 @@
+$mycolored:hsl(0, 100%, 68%);
+$myVeryDarkBlue: hsl(230, 11%, 40%);
+$GrayishBlue: hsl(231, 7%, 65%);
+$LightGrayishBlu :hsl(207, 33%, 95%);
+$VeryDarkBlue: hsl(230, 29%, 20%);
+$sizefon :18px;
+
+* {
+    padding: 0;
+    margin: 0;
+     
+   
+}
+
+    body {
+        margin: 0 auto;
+        font-family: 'Barlow Condensed', ;
+        font-family: 'Barlow', ;
+
+            header {
+                .head {
+                    
+                    height: 60vh;
+                    
+                    .logo{
+                        float:left;
+                       
+                        padding-top: 40px;
+                        padding-left: 10%;
+                        
+                        width: 50%;
+                      
+                    
+                    } 
+                    .navbar {
+                        text-align: center;
+                        position: absolute;
+                        right: 0;
+                        float: right;
+                        width: 50%;
+                        height: 50vh;
+                        background-color: $LightGrayishBlu;
+                        border-bottom-left-radius: 80px 80px;
+                        .toggle,.toggle2 {
+                            display: none;
+                        }
+                        #checkbox_toggle{
+                            visibility: hidden;
+                        }
+                       
+
+                        .navbar__element{
+                            
+                            
+                  
+                            
+
+                            color: $VeryDarkBlue;
+                            width: 100%;
+                            font-size: $sizefon - 4;
+                            list-style-type: none;
+                            padding-top: 40px;
+                            font-weight: 700;
+                            font-family:'Barlow Condensed' ;
+                            text-transform: uppercase;
+                            // label,input {
+                            //     display: none;
+                            // }
+                           
+                            
+                            li {
+                                display: inline-block;
+                                padding: 5px 10px;
+                               
+                                margin-left:15px;
+                                
+                                    i {
+                                        color:$GrayishBlue;
+                                        font-size: 10px;
+                                    }
+                                        
+                                
+                                a {
+                                    text-decoration:none ;
+                                   
+                                        
+
+                                   
+                                        
+    
+                                    
+
+                                }
+                                #color1{
+                                    color: $VeryDarkBlue; 
+                                }
+                                #color {
+                                            
+                                    color:$GrayishBlue;
+                                 
+                                         }
+                                .navbar__element--active {
+                                   
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                   
+                                
+                                       
+                                }
+                                
+                            }
+                            hr {
+                                width: 6px;
+                                height: 6px;
+
+                                background-color:$GrayishBlue;
+                                border-radius: 6px;
+                            }
+
+                        }
+                         }
+                    }
+            }
+            section {
+                .container{
+
+                   position: fixed;
+                   top: 25%;
+                   right: 0;
+                   left: 0;
+                   width: 100%;
+                   height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .image {
+                        width: 50%;
+                        display: block;
+                        img{
+                            padding-left: 10%;
+                        } 
+                    }
+                            }
+                    .text {
+                        display: block;
+                        width: 50%;
+                        padding-left: 10%;
+
+                      
+                        
+                        
+                        .text__titre{
+
+                            text-transform: uppercase;
+                            font-size: $sizefon - 5;
+                            .text__titre--modif {
+                                background-color: black;
+                                color:$LightGrayishBlu;
+                                border-radius: 10px;
+                                padding: 2px 5px;
+                                margin-right: 10px;
+                            }
+                            .text__titre--modif2 {
+                                color:$GrayishBlue ;
+                            }
+                        }
+                        .text__block {
+                            padding-top: 20px;
+                            .text__block--modif1{
+                            font-size:$sizefon*4 ;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-family:'Barlow Condensed' ;
+                            color: $VeryDarkBlue;
+                            }
+                            .text__block--modif2 {
+                                font-size: $sizefon +10;
+                                color:$GrayishBlue ;
+                            
+                            }
+
+                        }
+                        .text__buteaux {
+                                text-transform: uppercase;
+                                padding-top: 20px;
+
+
+                                display: flex;
+                                flex-direction: row;
+                           
+                            .text__buteaux--btn {
+                                
+                                text-transform: uppercase;
+                                padding: 16px 64px;
+                                background-color:$mycolored ;
+                                border-radius:  10px;
+                                border: none;
+                                color: white;
+                                font-family:'Barlow Condensed' ;
+                                font-weight: 700;
+                                &:hover {
+                                    background-color:hsla(0, 100%, 68%, 0.568);
+                                }
+                                & a {
+                                    text-decoration: none;
+                                    color: white;
+                                    
+                                }
+                            }
+                            p {
+                                padding: 16px 64px;
+                                color:$GrayishBlue ;
+                                
+                            }
+                           
+                        }
+
+                    }        
+                       
+                } 
+               
+            }
+
+
+            @media only screen and (max-width: 375px) {
+
+                * {
+                    padding: 0;
+                    margin: 0;
+                        body {
+                            width: 100%;
+                            margin: 0;
+                            // height: 1500px;
+                         
+
+                                header {
+                                    .head {
+
+                                        
+                                        
+
+                                     
+                                        .navbar {
+
+                                            height: 450px;
+                                            .toggle,.toggle2 {
+                                                display: block;
+                                                position: relative;
+                                                top: 25px;
+                                                left: 0px;
+                                                padding-left: 100px;
+                                               
+                                            }
+
+                                            .toggle2 {
+                                                top:6px;
+                                                
+                                                
+                                            }
+                                            .toggle2{
+                                                visibility: hidden;
+                                            }
+                                            .toggle {
+                                                // cursor: pointer;
+                                                display: block;
+                                            }
+                                            #checkbox_toggle:checked~ul {
+                                                display: block
+                                            }
+                                            
+                                            #checkbox_toggle:checked~.toggle {
+                                                visibility: hidden;
+                                            }
+                                            
+                                            #checkbox_toggle:checked~.toggle2 {
+                                                visibility: visible;
+                                            }
+                                          
+                                            
+
+
+                                            
+                                             .navbar__element {
+                                                
+                                                
+                                               
+                                               
+                                           
+
+                                                
+
+                                                
+                                                 
+                                                 display: none;
+                                       
+                                                 background-color:white;
+                                                 box-shadow: -2px 2px 8px   $GrayishBlue;
+                                              
+                                                 position: absolute;
+                                                 border: none;
+                                                //  transition: 0.6s;
+
+                                                 z-index: 2;
+                                                 padding: 10px 0px 0px;
+                                                 
+                                               
+                                                
+                                                right: 30%;
+                                                top: 130px;
+                                                
+                                                 
+                                                
+                                                 width: 150%;
+                                                 height: auto;
+                                                 
+                                                
+                                                li {
+                                                    display: block;
+                                                    padding: 15px  20px;
+                                                    
+                                                }
+                                                
+                                                 
+                                                   hr {
+                                                       width: 100%;
+                                                      
+                                                       opacity:hsla(235, 7%, 65%, 0.603);;
+                                                       height: 0.5px;
+                                                       border-width: 0.2px;
+                                                      ;
+                                                   }
+                                                 
+                                             
+                                             }
+                                        }
+
+                                    }
+                                }
+                                section {
+                                    .container {
+                                    //    z-index: -1;
+                                        display: flex;
+                                        // z-index: 1;
+                                        top:20%;
+                                        flex-direction: column-reverse;
+                                        flex-wrap: nowrap;
+                                           .image {
+                                               
+                                               width: 100%;
+                                               position: relative;
+                                            //    z-index: 0;
+                                       
+                                               
+                                                
+                                                img {
+                                                    margin-bottom: 100px;
+                                                    width: 120%;
+                                                    height: auto;
+
+                                       
+                                                    
+                                                }
+                                           
+                                                 }
+                                            .text {
+                                                width: 100%;
+
+                                                .text__block {
+                                                    .text__block--modif1 {
+                                                        font-size: $sizefon*2;
+                                                    }
+                                                    .text__block--modif2 {
+                                                        font-size:$sizefon;  
+                                                    }
+                                                }
+                                                .text__buteaux {
+                                                     .text__buteaux--btn {
+                                                       padding: 10px 15px;
+
+
+                                                     }
+                                                     p {
+                                                        padding: 10px 15px;
+
+                                                     }
+                                                  
+                                                }
+
+                                            }     
+                                    }
+                                    
+                                }
+                        }
+                }
+
+                }
+
+         
+             
+       
