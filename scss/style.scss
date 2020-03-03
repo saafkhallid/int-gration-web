@@ -229,8 +229,9 @@ $sizefon :18px;
                     padding: 0;
                     margin: 0;
                         body {
-                            width: 100%;
+                            width: auto;
                             margin: 0;
+                            height: auto;
                             // height: 1500px;
                          
 
@@ -238,12 +239,13 @@ $sizefon :18px;
                                     .head {
 
                                         
-                                        
+                                        // height: 700px;
+                                        position: relative;
 
                                      
                                         .navbar {
 
-                                            height: 450px;
+                                            // height: 450px;
                                             .toggle,.toggle2 {
                                                 display: block;
                                                 position: relative;
@@ -306,7 +308,7 @@ $sizefon :18px;
                                                  
                                                
                                                 
-                                                right: 30%;
+                                                right: 23%;
                                                 top: 130px;
                                                 
                                                  
@@ -328,7 +330,11 @@ $sizefon :18px;
                                                        opacity:hsla(235, 7%, 65%, 0.603);;
                                                        height: 0.5px;
                                                        border-width: 0.2px;
-                                                      ;
+                                                    //    color: yellowgreen;
+                                                      
+
+
+                                                      
                                                    }
                                                  
                                              
@@ -341,34 +347,45 @@ $sizefon :18px;
                                     .container {
                                     //    z-index: -1;
                                         display: flex;
+                                        left:0;
+                                        right: 0;
+                        
+                                     position: absolute;
+
+                                        // height: 700px;
+                                        // height: 20vh;
                                         // z-index: 1;
-                                        top:20%;
+                                       
                                         flex-direction: column-reverse;
-                                        flex-wrap: nowrap;
+                                        // flex-wrap: nowrap;
                                            .image {
                                                
                                                width: 100%;
-                                               position: relative;
+                                              overflow: hidden;
                                             //    z-index: 0;
                                        
                                                
                                                 
                                                 img {
                                                     margin-bottom: 100px;
-                                                    width: 120%;
+                                                    width: 140%;
                                                     height: auto;
-
+                                                    overflow: hidden;
+                                                    padding: 0;
                                        
                                                     
                                                 }
                                            
                                                  }
                                             .text {
-                                                width: 100%;
+                                                
+                                                width: 80%;
+                                                margin-bottom: 50%;
 
                                                 .text__block {
                                                     .text__block--modif1 {
                                                         font-size: $sizefon*2;
+                                                        padding-left: 0px;
                                                     }
                                                     .text__block--modif2 {
                                                         font-size:$sizefon;  
@@ -377,7 +394,7 @@ $sizefon :18px;
                                                 .text__buteaux {
                                                      .text__buteaux--btn {
                                                        padding: 10px 15px;
-
+                                                       
 
                                                      }
                                                      p {
